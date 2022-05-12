@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="true">
+  <test name="Test(failed)" parallel="true">
+    <classes>
+      <class name="suites.pruebaParalelo">
+        <methods>
+          <include name="startTest"/>
+          <include name="testLoginwithInCorrectPassword"/>
+        </methods>
+      </class> <!-- suites.pruebaParalelo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

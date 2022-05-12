@@ -1,0 +1,3 @@
+﻿"Tipo de transferencia","Importe","Moneda","Gastos de la transferencia a cargo de","BIC banco beneficiario","Nombre banco beneficiario","Cuenta interbancaria","Número de ABA o FW","País destino de los fondos","Banco intermediario","Cuenta del beneficiario (IBAN) (59)","Sucursal beneficiario","Nombre y apellido del beneficiario","Domicilio del beneficiario","Ciudad destino","Concepto del pago","Código de transferencia"
+"L","101,00","2222","OUR","BSCHUYMMXXX","","","","","","ABC1234567","","Juan Prueba Automatica 1","","","Campo 70 Automatico EXT 1","TRN"
+"E","102,00","2225","OUR","AEGUUS4TXXX","","","","","","ABC123456789","","pepito Prueba Automatica 1","Domicilio de prueba 1234","Ciudad de prueba 1234","Campo 70 Automatico EXT 1",""
