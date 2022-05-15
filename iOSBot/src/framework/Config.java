@@ -36,7 +36,7 @@ public class Config {
 
 		// ---------------------------------------------------------------------------------------------
 
-		capabilities.setCapability("deviceName", "iPhone 8");
+		capabilities.setCapability("deviceName", "iPhone 12 Pro Max");
 		//capabilities.setCapability("deviceName", "iPhone Xs Max");
 		 //capabilities.setCapability("deviceName", "iPhone 5s");
 		
