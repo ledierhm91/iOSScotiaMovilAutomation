@@ -1,0 +1,11 @@
+framework module IBMVerifyKit {
+  umbrella header "IBMVerifyKit.h"
+
+  export *
+  module * { export * }
+}
+
+module IBMVerifyKit.Swift {
+    header "IBMVerifyKit-Swift.h"
+    requires objc
+}
