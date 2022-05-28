@@ -45,8 +45,8 @@ public class Config {
 
 		capabilities.setCapability("automationName", "XCUITest");
 		
-	    capabilities.setCapability("locationServicesEnabled", "true");
-		capabilities.setCapability("locationServicesAuthorized", "true");
+		//	capabilities.setCapability("locationServicesEnabled", "true");
+//		capabilities.setCapability("locationServicesAuthorized", "true");
 		capabilities.setCapability("autoAcceptAlerts", "true");
 		
 	//	capabilities.setCapability("permissions", "{\"uy.com.scotiabank.scotiabankUPP\": {\"location\": \"inuse\"}}");
@@ -64,7 +64,7 @@ public class Config {
 
 		// capabilities.setCapability("useNewWDA", "true");
 
-		capabilities.setCapability("autoGrantPermissions", true);
+		// capabilities.setCapability("autoGrantPermissions", true);
 
 		// ---------------------------------------------------------------------------------------------
 
