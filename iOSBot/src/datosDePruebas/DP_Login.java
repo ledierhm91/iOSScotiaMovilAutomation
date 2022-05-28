@@ -22,12 +22,9 @@ public class DP_Login{
 			 {		 	  
 			 switch (juegoDatos) {
 	            case 1:    	
-	            	//usuario = "29601625";//"40894302";
-	        		//pin = "1212";
-	        		//password = "Testing.03";
-	            	usuario = "33344396";//"40894302";
-	        		pin = "1234";
-	        		password = "Password123..";
+	            	usuario = "29601625";//"40894302";
+	        		pin = "1212";
+	        		password = "Testing.03";
 				  			break;
 	            case 2:  	
 	            	usuario = "27704514";
@@ -69,6 +66,12 @@ public class DP_Login{
 	            	usuario = "1000000441289";
 	        		pin = "1234";
 	        		password = "Testing01";
+	  						break;
+	  						
+	            case 10:  	
+	            	usuario = "33344396";
+	        		pin = "1234";
+	        		password = "Password123..";
 	  						break;
 			 }
 

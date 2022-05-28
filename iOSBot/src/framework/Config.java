@@ -57,7 +57,7 @@ public class Config {
 		
 		
 		
-		capabilities.setCapability("app",  "/Volumes/HD - Datos - Datos/APK/Scotiabank.app"); //clave digital
+		capabilities.setCapability("app",  "/Users/ledier.hernandez/Library/CloudStorage/OneDrive-Perficient,Inc/Repositorios/iOSScotiaMovilAutomation/app/Scotiabank.app"); //clave digital
 		
 	   // capabilities.setCapability("udid", udid);
 
