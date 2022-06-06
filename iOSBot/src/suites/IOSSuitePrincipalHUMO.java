@@ -34,7 +34,7 @@ public class IOSSuitePrincipalHUMO{
 		  	    suite.modLogIn("D", 1);	
 		  	    suite.modOpcionesMenu(); // falta cotizacion
 		   		//suite.modSolChequera(); //quedo bien
-		  	    suite.modTransferInterna("UYU"); 
+//		  	    suite.modTransferInterna("UYU"); 
 		    	suite.modLogOut(); 
 		    	
 		    	//-----------------------

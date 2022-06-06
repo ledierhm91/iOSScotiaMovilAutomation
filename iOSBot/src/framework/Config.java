@@ -45,8 +45,9 @@ public class Config {
 
 		capabilities.setCapability("automationName", "XCUITest");
 		
-	//	capabilities.setCapability("locationServicesEnabled", "true");
+		//	capabilities.setCapability("locationServicesEnabled", "true");
 //		capabilities.setCapability("locationServicesAuthorized", "true");
+		capabilities.setCapability("autoAcceptAlerts", "true");
 		
 	//	capabilities.setCapability("permissions", "{\"uy.com.scotiabank.scotiabankUPP\": {\"location\": \"inuse\"}}");
 		//capabilities.setCapability("permissions", "{\"uy.com.scotiabank.scotiabankUPP\": {\"faceid\": \"NO\"}}");
@@ -57,7 +58,7 @@ public class Config {
 		
 		
 		
-		capabilities.setCapability("app",  "/Volumes/HD - Datos - Datos/APK/Scotiabank.app"); //clave digital
+		capabilities.setCapability("app",  "/Users/ledier.hernandez/Library/CloudStorage/OneDrive-Perficient,Inc/Repositorios/iOSScotiaMovilAutomation/app/Scotiabank.app"); //clave digital
 		
 	   // capabilities.setCapability("udid", udid);
 

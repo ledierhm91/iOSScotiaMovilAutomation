@@ -1,0 +1,2057 @@
+{
+  "returnCode": "NAZ0000",
+  "returnCodeDescription": "Operación ejecutada con éxito",
+  "promotions": [
+    {
+      "id": "albertos",
+      "name": "Alberto´s",
+      "description": "Todos los días 15% y 25% de ahorro",
+      "entry": "Gastronomía",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.926817,
+          "lon": -56.159773,
+          "name": "Alberto´s",
+          "description": "Todos los días 15% y 25% de ahorro",
+          "notes": "Gastronomía",
+          "phone": "2605 9314",
+          "address": "Gral. Lavalleja 1018",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Barra de Carrasco"
+        },
+        {
+          "id": "2",
+          "lat": -34.926817,
+          "lon": -56.159773,
+          "name": "Alberto´s",
+          "description": "Todos los días 15% y 25% de ahorro",
+          "notes": "Gastronomía",
+          "phone": "2628 9433",
+          "address": "Luis Alberto de Herrera 1144",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Pocitos"
+        }
+      ]
+    },
+    {
+      "id": "alephStore",
+      "name": "Aleph Store",
+      "description": "Todos los días 15% de ahorro y 12 o 18 cuotas sin recargo.",
+      "entry": "Electrónica",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.905889,
+          "lon": -56.137015,
+          "name": "Aleph Store",
+          "description": "Todos los días 15% de ahorro",
+          "notes": "Electronica",
+          "phone": "2628 8442",
+          "address": "26 de marzo 3494",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Pocitos"
+        }
+      ]
+    },
+    {
+      "id": "alquimista",
+      "name": "Alquimista",
+      "description": "De lunes a viernes, 15% y 25% de ahorro",
+      "entry": "Gastronomía",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.894441,
+          "lon": -56.062648,
+          "name": "Alquimista",
+          "description": "De lunes a viernes, 15% y 25% de ahorro",
+          "notes": "Un restaurante de lujo en Carrasco. De lunes a viernes, 15% de ahorro con Tarjetas de Crédito y Débito y 25% de ahorro con Tarjetas de Crédito Platinum, Gold y Débito Premium",
+          "phone": "2606 0890",
+          "address": "Avda. Bolivia 1323",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Carrasco"
+        }
+      ]
+    },
+    {
+      "id": "amuletto",
+      "name": "Amuletto",
+      "description": "Todos los días 15% de ahorro",
+      "entry": "Indumentaria",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.913912,
+          "lon": -56.150464,
+          "name": "Amuletto",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2709 5758",
+          "address": "Cavia 3087",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Pocitos"
+        }
+      ]
+    },
+    {
+      "id": "arbiter",
+      "name": "Arbiter",
+      "description": "Todos los dìas 15% y 25% de ahorro",
+      "entry": "Indumentaria",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.922649,
+          "lon": -56.159218,
+          "name": "Arbiter",
+          "description": "Todos los días 15% y 25% de ahorro",
+          "notes": "Zapatería",
+          "phone": "271 19470",
+          "address": "Solano Garcia 2499",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Punta Carretas"
+        }
+      ]
+    },
+    {
+      "id": "arpelli",
+      "name": "Arpelli",
+      "description": "Todos los dìas 15% de ahorro",
+      "entry": "Accesorios",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.905215,
+          "lon": -56.186988,
+          "name": "Arpelli",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Accesorios",
+          "phone": "2902 9339",
+          "address": "Ejido 1371 esq. 18 de Julio",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "2",
+          "lat": -34.875677,
+          "lon": -56.141803,
+          "name": "Arpelli",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Accesorios",
+          "phone": "2901 9322",
+          "address": "18 de Julio 914 esq. Convenciòn",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "3",
+          "lat": -34.875703,
+          "lon": -56.141792,
+          "name": "Arpelli",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Accesorios",
+          "phone": "2509 6510",
+          "address": "8 de octubre 3693 esq. Gobernador Viana",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Unión"
+        },
+        {
+          "id": "4",
+          "lat": -34.902175,
+          "lon": -56.177046,
+          "name": "Arpelli",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Accesorios",
+          "phone": "2402 2989",
+          "address": "18 de Julio 1813 esq. Tristàn Narvaja",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Cordón"
+        },
+        {
+          "id": "5",
+          "lat": -34.856426,
+          "lon": -56.220162,
+          "name": "Arpelli",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Accesorios",
+          "phone": "230 64854",
+          "address": "Agraciada 4217",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Paso Molino"
+        },
+        {
+          "id": "6",
+          "lat": -34.7271,
+          "lon": -56.219124,
+          "name": "Arpelli",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Accesorios",
+          "phone": "236 36066",
+          "address": "Artigas 689 esq. Pilar Cabrera",
+          "state": "Canelones",
+          "city": "Las Piedras",
+          "neighborhood": "Las Piedras"
+        }
+      ]
+    },
+    {
+      "id": "articoMontevideo",
+      "name": "Ártico Montevideo",
+      "description": "De lunes a viernes, 15% y 25% de ahorro",
+      "entry": "Gastronomía",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.907571,
+          "lon": -56.204723,
+          "name": "Artico Fast Food",
+          "description": "De lunes a viernes, 15% y 25% de ahorro",
+          "notes": "La mejor comida de mar en Montevideo. 15% de ahorro con Tarjetas de Crédito y Débito. 25% de ahorro con Tarjetas de Crédito Platinum, Gold y Débito Premium",
+          "phone": "2915 7349",
+          "address": "Sarandí 502",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Ciudad Vieja"
+        }
+      ]
+    },
+    {
+      "id": "articoPuntaDelEste",
+      "name": "Artico Punta del Este",
+      "description": "Todos los días 15% y 25% de ahorro",
+      "entry": "Gastronomía",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.963931,
+          "lon": -54.951926,
+          "name": "Artico Fast Food",
+          "description": "Todos los dìas 15% y 25% de ahorro ",
+          "notes": "Excelente comida de mar en Punta del Este. Obtenè 15% de ahorro con Tarjetas de Crédito y Débito. 25% de ahorro con Tarjetas de Crédito Platinum, Gold y Débito Premium",
+          "phone": "424 41951",
+          "address": "El Trinquete - Puerto de Punta del Este",
+          "state": "Maldonado",
+          "city": "Punta del Este",
+          "neighborhood": "Puerto de Punta del Este"
+        }
+      ]
+    },
+    {
+      "id": "audilux",
+      "name": "Audilux",
+      "description": "12 cuotas sin recargo",
+      "entry": "Audición",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.914303,
+          "lon": -56.156176,
+          "name": "Audilux",
+          "description": "Lunes y Martes 10% tarjetas de crédito y débio clásicas / 15% tarjetas Gold, Platinum y débito Premium",
+          "notes": "Audición",
+          "phone": "271 18733",
+          "address": "Sarmiento 2602",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Punta Carretas"
+        },
+        {
+          "id": "2",
+          "lat": -34.90203,
+          "lon": -56.16434,
+          "name": "Audilux",
+          "description": "Lunes y Martes 10% tarjetas de crédito y débio clásicas / 15% tarjetas Gold, Platinum y débito Premium",
+          "notes": "Audición",
+          "phone": "240 07078",
+          "address": "Bulevar Artigas 1457",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Cordón"
+        },
+        {
+          "id": "3",
+          "lat": -34.840929,
+          "lon": -55.993392,
+          "name": "Audilux",
+          "description": "Lunes y Martes 10% tarjetas de crédito y débio clásicas / 15% tarjetas Gold, Platinum y débito Premium",
+          "notes": "Audición",
+          "phone": "268 38191",
+          "address": "Costa urbana Shopping local 23",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Shangrilá"
+        },
+        {
+          "id": "4",
+          "lat": -34.902926,
+          "lon": -56.136065,
+          "name": "Audilux",
+          "description": "Lunes y Martes 10% tarjetas de crédito y débio clásicas / 15% tarjetas Gold, Platinum y débito Premium",
+          "notes": "Audición",
+          "phone": "2622 0534",
+          "address": "Montevideo Shopping",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "WTC"
+        },
+        {
+          "id": "5",
+          "lat": -34.923994,
+          "lon": -56.158504,
+          "name": "Audilux",
+          "description": "Lunes y Martes 10% tarjetas de crédito y débio clásicas / 15% tarjetas Gold, Platinum y débito Premium",
+          "notes": "Audición",
+          "phone": "2711 0750",
+          "address": "Punta Carretas Shopping",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Punta Carretas"
+        }
+      ]
+    },
+    {
+      "id": "barTabare",
+      "name": "Bar Tabaré",
+      "description": "De lunes a viernes, 15% y 25% de ahorro",
+      "entry": "Gastronomía",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.926817,
+          "lon": -56.159773,
+          "name": "Bar Tabaré ",
+          "description": "De lunes a viernes, 15% y 25% de ahorro + 9 ptos de iva",
+          "notes": "Bar Tabaré es parte de Circuito Gourmet. De lunes a viernes, 15% de ahorro con Tarjetas de Crédito y Débito y 25% de ahorro con Tarjetas de Crédito Platinum, Gold y Débito Premium",
+          "phone": "2712 3242",
+          "address": "José Luis Zorrilla de San Martín 154",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Punta Carretas"
+        }
+      ]
+    },
+    {
+      "id": "barracaEuropa",
+      "name": "Barraca Europa",
+      "description": "Todos los días 15% / 12 y 18 cuotas",
+      "entry": "Electrodomesticos",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.89601,
+          "lon": -56.191263,
+          "name": "Barraca Europa",
+          "description": "Todos los días 15% de ahorro / 12 y 18 cuotas",
+          "notes": "Electrodomesticos",
+          "phone": "292 9484",
+          "address": "Cuareim 1844",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "2",
+          "lat": -34.886832,
+          "lon": -56.108577,
+          "name": "Barraca Europa",
+          "description": "Todos los días 15% de ahorro / 12 y 18 cuotas",
+          "notes": "Electrodomesticos",
+          "phone": "261 95205",
+          "address": "Av. Iatlia 4660",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Malvin"
+        },
+        {
+          "id": "3",
+          "lat": -34.905233,
+          "lon": -56.191263,
+          "name": "Barraca Europa",
+          "description": "Todos los días 15% de ahorro / 12 y 18 cuotas",
+          "notes": "Electrodomesticos",
+          "phone": "290 25014",
+          "address": "Ejido 1371 esq. 18 de Julio",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "4",
+          "lat": -34.923595,
+          "lon": -56.157151,
+          "name": "Barraca Europa",
+          "description": "Todos los días 15% de ahorro / 12 y 18 cuotas",
+          "notes": "Electrodomesticos",
+          "phone": "271 61621",
+          "address": "Solano García 2569",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Punta Carretas"
+        },
+        {
+          "id": "5",
+          "lat": -34.941912,
+          "lon": -54.93169,
+          "name": "Barraca Europa",
+          "description": "Todos los días 15% de ahorro / 12 y 18 cuotas",
+          "notes": "Electrodomesticos",
+          "phone": "424 98418",
+          "address": "Av Italia y Pda 4",
+          "state": "Punta del Este",
+          "city": "Maldonado",
+          "neighborhood": "Punta del Este"
+        }
+      ]
+    },
+    {
+      "id": "blackstore",
+      "name": "BlackStore",
+      "description": "Todos los dìas 15% de ahorro",
+      "entry": "Indumentaria",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.857181,
+          "lon": -56.176923,
+          "name": "BlackStore",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "José Batlle y Ordoñez s/n",
+          "state": "La Paz",
+          "city": "Canelones",
+          "neighborhood": "Canelones"
+        },
+        {
+          "id": "2",
+          "lat": -34.761878,
+          "lon": -56.228038,
+          "name": "BlackStore",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "José Enrique Rodó 369",
+          "state": "Canelones",
+          "city": "Canelones",
+          "neighborhood": "Canelones"
+        },
+        {
+          "id": "3",
+          "lat": -34.881024,
+          "lon": -56.081374,
+          "name": "BlackStore",
+          "description": "Todos los días, 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "Portones Shopping",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Carrasco"
+        },
+        {
+          "id": "4",
+          "lat": -34.9061,
+          "lon": -56.195542,
+          "name": "BlackStore",
+          "description": "Todos los días, 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "18 de Julio 963",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "5",
+          "lat": -34.340352,
+          "lon": -56.712979,
+          "name": "BlackStore",
+          "description": "Todos los días, 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "25 de mayo s/n",
+          "state": "San Josè",
+          "city": "San Josè",
+          "neighborhood": "San Josè"
+        },
+        {
+          "id": "6",
+          "lat": -34.727755,
+          "lon": -56.21935,
+          "name": "BlackStore",
+          "description": "Todos los días, 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "Pilar cabrera 592",
+          "state": "Canelones",
+          "city": "Las Piedras",
+          "neighborhood": "Las Piedras"
+        },
+        {
+          "id": "7",
+          "lat": -34.725455,
+          "lon": -56.203473,
+          "name": "BlackStore",
+          "description": "Todos los días, 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "Las piedras Shopping",
+          "state": "Canelones",
+          "city": "Las Piedras",
+          "neighborhood": "Las Piedras"
+        },
+        {
+          "id": "8",
+          "lat": -34.86888,
+          "lon": -56.169817,
+          "name": "BlackStore",
+          "description": "Todos los días, 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "Shopping Nuevo Centro",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Jacinto Vera"
+        },
+        {
+          "id": "9",
+          "lat": -34.94072,
+          "lon": -54.934257,
+          "name": "BlackStore",
+          "description": "Todos los días, 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "Punta Shopping",
+          "state": "Maldonado",
+          "city": "Punta del Este",
+          "neighborhood": "Punta del Este"
+        },
+        {
+          "id": "10",
+          "lat": -34.907785,
+          "lon": -54.95666,
+          "name": "BlackStore",
+          "description": "Todos los días, 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "Román Guerra 865",
+          "state": "Maldonado",
+          "city": "Maldonado",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "11",
+          "lat": -34.906375,
+          "lon": -56.198602,
+          "name": "BlackStore",
+          "description": "Todos los días, 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "Av. 18 de julio 520",
+          "state": "Durazno",
+          "city": "Durazno",
+          "neighborhood": "Durazno"
+        },
+        {
+          "id": "12",
+          "lat": -34.872952,
+          "lon": -56.247004,
+          "name": "BlackStore",
+          "description": "Todos los días, 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "Carlos Ma Ramirez 1490 - local 3b",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "El Tobogán"
+        },
+        {
+          "id": "13",
+          "lat": -34.726983,
+          "lon": -56.219025,
+          "name": "BlackStore",
+          "description": "Todos los días, 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "Artigas 688",
+          "state": "Canelones",
+          "city": "Las Piedras",
+          "neighborhood": "Las Piedras"
+        },
+        {
+          "id": "14",
+          "lat": -34.727404,
+          "lon": -56.226375,
+          "name": "BlackStore",
+          "description": "Todos los días, 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "Av. Artigas 1095",
+          "state": "Canelones",
+          "city": "Pando",
+          "neighborhood": "Pando"
+        },
+        {
+          "id": "15",
+          "lat": -34.099286,
+          "lon": -56.214587,
+          "name": "BlackStore",
+          "description": "Todos los días, 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "Independencia 579",
+          "state": "Florida",
+          "city": "Florida",
+          "neighborhood": "Florida"
+        }
+      ]
+    },
+    {
+      "id": "cafeMartinez",
+      "name": "Café Martínez",
+      "description": "De lunes a viernes, 15% y 25% de ahorro",
+      "entry": "Gastronomía",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.919488,
+          "lon": -56.154064,
+          "name": "Café Martinez Punta Carretas",
+          "description": "De lunes a viernes, 15% y 25% de ahorro",
+          "notes": "Gastronomía",
+          "phone": "2710 7536",
+          "address": "Pedro F. Berro 640",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Punta Carretas"
+        },
+        {
+          "id": "2",
+          "lat": -34.88666,
+          "lon": -56.059001,
+          "name": "Café Martinez Carrasco",
+          "description": "De lunes a viernes, 15% y 25% de ahorro",
+          "notes": "Gastronomía",
+          "phone": "2604 1850",
+          "address": "Avenida Gral. Rivera 6634",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Carrasco"
+        }
+      ]
+    },
+    {
+      "id": "calvinKleinPuntaDelEste",
+      "name": "Calvin Klein Punta del Este",
+      "description": "Todos los días 15% de ahorro",
+      "entry": "Indumentaria",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.958328,
+          "lon": -54.942603,
+          "name": "Calvin Klein",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "424 38332",
+          "address": "Calle 18 esq 29",
+          "state": "Maldonado",
+          "city": "Punta del Este",
+          "neighborhood": "Punta del Este"
+        }
+      ]
+    },
+    {
+      "id": "casaElena",
+      "name": "Casa Elena",
+      "description": "Todos los dìas 15% y 25% de ahorro",
+      "entry": "Indumentaria",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.887955,
+          "lon": -56.058045,
+          "name": "Casa Elena",
+          "description": "Todos los dìas 15% y 25% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2602 9808",
+          "address": "Arocena 1631",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Carrasco"
+        }
+      ]
+    },
+    {
+      "id": "ceibo",
+      "name": "Ceibo",
+      "description": "Todos los días 15% y 25% de ahorro",
+      "entry": "Gastronomía",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.907968,
+          "lon": -56.206652,
+          "name": "Ceibo Cantia",
+          "description": "De lunes a viernes, 15% y 25% de ahorro",
+          "notes": "Gastronomía",
+          "phone": "2915 1713",
+          "address": "Sarandì 413",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Ciudad Vieja"
+        }
+      ]
+    },
+    {
+      "id": "cuatroAses",
+      "name": "Cuatroases",
+      "description": "Todos los dìas 15% de ahorro",
+      "entry": "Indumentaria",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.86888,
+          "lon": -56.169817,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2201 3113",
+          "address": "Nuevo Centro Shopping - local 210",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Jacinto Vera"
+        },
+        {
+          "id": "2",
+          "lat": -34.902926,
+          "lon": -56.136065,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2628 2523",
+          "address": "Montevideo Shopping - local 334",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "WTC"
+        },
+        {
+          "id": "4",
+          "lat": -34.893715,
+          "lon": -56.166277,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2408 5840",
+          "address": "Tres Cruces Shopping",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Tres Cruces"
+        },
+        {
+          "id": "5",
+          "lat": -34.881024,
+          "lon": -56.081374,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2601 7771",
+          "address": "Portones Shopping - loc 280",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Carrasco"
+        },
+        {
+          "id": "6",
+          "lat": -34.87967,
+          "lon": -56.148709,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2480 2788",
+          "address": "8 de octubre 3381bis - loc 3",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Unión"
+        },
+        {
+          "id": "7",
+          "lat": -34.905954,
+          "lon": -56.197108,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "290 30914",
+          "address": "Convenciòn 1369",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "8",
+          "lat": -34.906,
+          "lon": -56.192572,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2900 2234",
+          "address": "18 de julio 1096",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "9",
+          "lat": -34.906697,
+          "lon": -56.202272,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2917 0916",
+          "address": "Sarandì 632",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Ciudad Vieja"
+        },
+        {
+          "id": "10",
+          "lat": -34.857608,
+          "lon": -56.21871,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2309 5719",
+          "address": "Agraciada 4139",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Paso Molino"
+        },
+        {
+          "id": "11",
+          "lat": -34.90398,
+          "lon": -56.181377,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2403 1225",
+          "address": "18 de Julio 1611",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "12",
+          "lat": -34.905708,
+          "lon": -56.189318,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2903 3294",
+          "address": "18 de julio 912",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "13",
+          "lat": -34.902393,
+          "lon": -56.177477,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2902 8351",
+          "address": "18 de julio 1241",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "14",
+          "lat": -34.902393,
+          "lon": -56.177477,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2403 5592",
+          "address": "18 de Julio 1797",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "15",
+          "lat": -34.905465,
+          "lon": -56.185264,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2900 6890",
+          "address": "18 de Julio 1437",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "16",
+          "lat": -34.874755,
+          "lon": -56.140235,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2507 4897",
+          "address": "8 de octubre 3795",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Unión"
+        },
+        {
+          "id": "17",
+          "lat": -34.840929,
+          "lon": -55.993392,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2682 8991",
+          "address": "Costa urbana Shopping Local 40",
+          "state": "Canelones",
+          "city": "Canelones",
+          "neighborhood": "Shangrilá"
+        },
+        {
+          "id": "18",
+          "lat": -34.726978,
+          "lon": -56.217808,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2365 6519",
+          "address": "Av. Artigas 652",
+          "state": "Canelones",
+          "city": "Las Piedras",
+          "neighborhood": "Las Piedras"
+        },
+        {
+          "id": "19",
+          "lat": -34.727421,
+          "lon": -56.226375,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2292 7444",
+          "address": "Av. Artigas 1015",
+          "state": "Canelones",
+          "city": "Pando",
+          "neighborhood": "Pando"
+        },
+        {
+          "id": "20",
+          "lat": -34.725455,
+          "lon": -56.203473,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2363 7489",
+          "address": "Las Piedras Shopping - loc 40",
+          "state": "Canelones",
+          "city": "Las Piedras",
+          "neighborhood": "Las Piedras"
+        },
+        {
+          "id": "21",
+          "lat": -32.370703,
+          "lon": -54.16881,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4642 3545",
+          "address": "Aparicio Saravia 634",
+          "state": "Cerro Largo",
+          "city": "Melo",
+          "neighborhood": "Melo"
+        },
+        {
+          "id": "22",
+          "lat": -34.465806,
+          "lon": -57.834672,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4642 3545",
+          "address": "Colonia Shopping - loc 8",
+          "state": "Colonia",
+          "city": "Colonia del Sacramento",
+          "neighborhood": "Colonia del Sacramento"
+        },
+        {
+          "id": "24",
+          "lat": -34.098138,
+          "lon": -56.215767,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4352 7048",
+          "address": "Independencia 652",
+          "state": "Florida",
+          "city": "Florida",
+          "neighborhood": "Florida"
+        },
+        {
+          "id": "25",
+          "lat": -34.377039,
+          "lon": -55.237087,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4442 2314",
+          "address": "25 de Mayo 531",
+          "state": "Lavalleja",
+          "city": "Minas",
+          "neighborhood": "Minas"
+        },
+        {
+          "id": "26",
+          "lat": -34.959776,
+          "lon": -54.940933,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4244 5608",
+          "address": "Gorlero 921",
+          "state": "Maldonado",
+          "city": "Punta del Este",
+          "neighborhood": "Punta del Este"
+        },
+        {
+          "id": "28",
+          "lat": -34.907903,
+          "lon": -54.957794,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4223 9157",
+          "address": "Sarandì 867",
+          "state": "Maldonado",
+          "city": "Maldonado",
+          "neighborhood": "Maldonado"
+        },
+        {
+          "id": "29",
+          "lat": -32.321627,
+          "lon": -58.070466,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4724 4144",
+          "address": "Paysandù terminal Shopping - Bvar. Artigas 770",
+          "state": "Paysandù",
+          "city": "Paysandù",
+          "neighborhood": "Paysandù"
+        },
+        {
+          "id": "30",
+          "lat": -32.317025,
+          "lon": -58.084905,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4724 2040",
+          "address": "18 de julio 1056",
+          "state": "Paysandù",
+          "city": "Paysandù",
+          "neighborhood": "Paysandù"
+        },
+        {
+          "id": "31",
+          "lat": -30.897013,
+          "lon": -55.53754,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4622 4475",
+          "address": "Ceballos 1114",
+          "state": "Rivera",
+          "city": "Rivera",
+          "neighborhood": "Rivera"
+        },
+        {
+          "id": "32",
+          "lat": -30.898794,
+          "lon": -55.539336,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4623 0785",
+          "address": "Sarandì 470",
+          "state": "Rivera",
+          "city": "Rivera",
+          "neighborhood": "Rivera"
+        },
+        {
+          "id": "33",
+          "lat": -34.471714,
+          "lon": -54.330598,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4474 4252",
+          "address": "Av. Brasil 591",
+          "state": "Rocha",
+          "city": "Chuy",
+          "neighborhood": "Chuy"
+        },
+        {
+          "id": "34",
+          "lat": -31.38432,
+          "lon": -57.9442,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4732 9603",
+          "address": "Salto Shopping",
+          "state": "Salto",
+          "city": "Salto",
+          "neighborhood": "Salto"
+        },
+        {
+          "id": "35",
+          "lat": -34.339856,
+          "lon": -56.71267,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4734 2166",
+          "address": "Av. Uruguay 877",
+          "state": "Salto",
+          "city": "Salto",
+          "neighborhood": "Salto"
+        },
+        {
+          "id": "36",
+          "lat": -34.339856,
+          "lon": -56.71267,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4342 0550",
+          "address": "San Josè",
+          "state": "San Josè de mayo",
+          "city": "San Josè de mayo",
+          "neighborhood": "San Josè de mayo"
+        },
+        {
+          "id": "37",
+          "lat": -33.256942,
+          "lon": -58.027983,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4532 7407",
+          "address": "Don Bosco 734 - loc 6",
+          "state": "Soriano",
+          "city": "Mercedes",
+          "neighborhood": "Mercedes"
+        },
+        {
+          "id": "38",
+          "lat": -31.713168,
+          "lon": -55.980411,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "463 31984",
+          "address": "18 de julio 228",
+          "state": "Tacuarembò",
+          "city": "Tacuarembò",
+          "neighborhood": "Tacuarembò"
+        },
+        {
+          "id": "3",
+          "lat": -34.923994,
+          "lon": -56.158504,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2711 9861",
+          "address": "Punta Carretas Shopping- Local 110",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Punta Carretas"
+        },
+        {
+          "id": "27",
+          "lat": -34.94072,
+          "lon": -54.934257,
+          "name": "Cuatroases",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4249 5855",
+          "address": "Punta Shopping",
+          "state": "Maldonado",
+          "city": "Punta del Este",
+          "neighborhood": "Punta del Este"
+        }
+      ]
+    },
+    {
+      "id": "dakar",
+      "name": "Dakar",
+      "description": "Todos los días 15% de ahorro",
+      "entry": "Indumentaria",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.904988,
+          "lon": -56.184288,
+          "name": "Dakar",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2403 5591",
+          "address": "18 de julio 1473 bis",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "2",
+          "lat": -34.905883,
+          "lon": -56.169817,
+          "name": "Dakar",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2902 4384",
+          "address": "18 de julio 1077",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "3",
+          "lat": -34.86888,
+          "lon": -58.027983,
+          "name": "Dakar",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2201 3079",
+          "address": "Nuevo centro shopping ",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Jacinto Vera"
+        },
+        {
+          "id": "5",
+          "lat": -34.840929,
+          "lon": -55.993392,
+          "name": "Dakar",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2695 4736",
+          "address": "Costa urbana Shopping ",
+          "state": "Canelones",
+          "city": "Canelones",
+          "neighborhood": "Shangrilá"
+        },
+        {
+          "id": "6",
+          "lat": -34.904988,
+          "lon": -56.184288,
+          "name": "Dakar",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4733 9260",
+          "address": "Uruguay",
+          "state": "Salto",
+          "city": "Salto",
+          "neighborhood": "Salto"
+        },
+        {
+          "id": "7",
+          "lat": -34.893715,
+          "lon": 0,
+          "name": "Dakar",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2408 1429",
+          "address": "Tres Cruces Shopping",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Tres Cruces"
+        },
+        {
+          "id": "8",
+          "lat": -34.875986,
+          "lon": -56.142572,
+          "name": "Dakar",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2506 4454",
+          "address": "8 de octubre 3669",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Unión"
+        },
+        {
+          "id": "9",
+          "lat": -34.726807,
+          "lon": -56.21876,
+          "name": "Dakar",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2365 8538",
+          "address": "Av. Artigas 680",
+          "state": "Canelones",
+          "city": "Las Piedras",
+          "neighborhood": "Las Piedras"
+        },
+        {
+          "id": "10",
+          "lat": -34.725455,
+          "lon": -56.203473,
+          "name": "Dakar",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2361 8617",
+          "address": "Las Piedras Shopping",
+          "state": "Canelones",
+          "city": "Las Piedras",
+          "neighborhood": "Las Piedras"
+        },
+        {
+          "id": "11",
+          "lat": -34.902926,
+          "lon": -56.136065,
+          "name": "Dakar",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2623 3258",
+          "address": "Montevideo Shopping",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "WTC"
+        },
+        {
+          "id": "12",
+          "lat": -34.85798,
+          "lon": -56.218203,
+          "name": "Dakar",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4725 0919",
+          "address": "18 de julio 1005",
+          "state": "Paysandù",
+          "city": "Paysandù",
+          "neighborhood": "Paysandù"
+        },
+        {
+          "id": "13",
+          "lat": -34.857989,
+          "lon": -56.218214,
+          "name": "Dakar",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2308 6454",
+          "address": "Agraciada 4119 bis",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Paso Molino"
+        },
+        {
+          "id": "4",
+          "lat": -34.94072,
+          "lon": -54.934257,
+          "name": "Dakar",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4247 7740",
+          "address": "Punta Shopping",
+          "state": "Maldonado",
+          "city": "Maldonado",
+          "neighborhood": "Punta del Este"
+        }
+      ]
+    },
+    {
+      "id": "danielCassin",
+      "name": "Daniel Cassin",
+      "description": "Todos los dìas 15% de ahorro",
+      "entry": "Indumentaria",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.904982,
+          "lon": -56.184157,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2402 4816",
+          "address": "18 de julio 1463 bis",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "2",
+          "lat": -34.902926,
+          "lon": -56.136065,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2622 9531",
+          "address": "Montevideo Shopping - local 277",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "WTC"
+        },
+        {
+          "id": "3",
+          "lat": -34.889142,
+          "lon": -56.056988,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2600 3944",
+          "address": "Arocena 1594",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Carrasco"
+        },
+        {
+          "id": "4",
+          "lat": -34.86888,
+          "lon": -56.169817,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2201 9680",
+          "address": "Nuevo Centro Shopping - local 136 y 137",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Jacinto Vera"
+        },
+        {
+          "id": "5",
+          "lat": -34.881024,
+          "lon": -56.081374,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2601 7773",
+          "address": "Portones Shopping - local 218",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Carrasco"
+        },
+        {
+          "id": "6",
+          "lat": -34.906014,
+          "lon": -56.193294,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2901 9079",
+          "address": "18 de Julio 1065",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "7",
+          "lat": -34.923994,
+          "lon": -56.158504,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2711 6724",
+          "address": "Ellauri 350 - local 263, 264 y 265",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Punta Carretas"
+        },
+        {
+          "id": "8",
+          "lat": -34.893738,
+          "lon": -56.166024,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2400 2563",
+          "address": "Br. Artigas 1825 local 7",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Tres Cruces"
+        },
+        {
+          "id": "9",
+          "lat": -34.902558,
+          "lon": -56.177888,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2402 9888",
+          "address": "18 de julio 1781 bis",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "10",
+          "lat": -34.906741,
+          "lon": -56.20224,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2916 6324",
+          "address": "Sarandì 632",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Ciudad Vieja"
+        },
+        {
+          "id": "11",
+          "lat": -34.906741,
+          "lon": -56.20224,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2909 0407",
+          "address": "18 de julio 1283",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Centro"
+        },
+        {
+          "id": "12",
+          "lat": -34.840929,
+          "lon": -55.993392,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2682 2938",
+          "address": "Costa urbana Shopping Local 33",
+          "state": "Canelones",
+          "city": "Canelones",
+          "neighborhood": "Shangrilá"
+        },
+        {
+          "id": "13",
+          "lat": -34.725455,
+          "lon": -56.203473,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2369 9793",
+          "address": "Las Piedras shopping - local 105 y 106",
+          "state": "Canelones",
+          "city": "Canelones",
+          "neighborhood": "Las Piedras"
+        },
+        {
+          "id": "14",
+          "lat": -34.470465,
+          "lon": -57.84698,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4522 9343",
+          "address": "Av. General Flores 360",
+          "state": "Colonia",
+          "city": "Colonia del Sacramento",
+          "neighborhood": "Colonia del Sacramento"
+        },
+        {
+          "id": "15",
+          "lat": -34.958987,
+          "lon": -54.941706,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4244 8815",
+          "address": "El Remanso 34 (calle 20)",
+          "state": "Maldonado",
+          "city": "Punta del Este",
+          "neighborhood": "Punta del Este"
+        },
+        {
+          "id": "17",
+          "lat": -34.905432,
+          "lon": -56.185116,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4722 2945",
+          "address": "18 de julio s/n esq. Zorilla de San Matìn",
+          "state": "Paysandù",
+          "city": "Paysandù",
+          "neighborhood": "Paysandù"
+        },
+        {
+          "id": "18",
+          "lat": -32.321564,
+          "lon": -58.070509,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4725 2090",
+          "address": "Paysandù Shopping - Br. Artigas 770",
+          "state": "Paysandù",
+          "city": "Paysandù",
+          "neighborhood": "Paysandù"
+        },
+        {
+          "id": "19",
+          "lat": -30.89701,
+          "lon": -55.537491,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4622 3635",
+          "address": "Ceballos 1114",
+          "state": "Rivera",
+          "city": "Rivera",
+          "neighborhood": "Rivera"
+        },
+        {
+          "id": "20",
+          "lat": -30.917065,
+          "lon": -55.54882,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4624 3071",
+          "address": "Av. Sarandì 1700",
+          "state": "Rivera",
+          "city": "Rivera",
+          "neighborhood": "Rivera"
+        },
+        {
+          "id": "21",
+          "lat": -31.3849,
+          "lon": -57.944091,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4735 2108",
+          "address": "Av. Batlle y Ordoñez 2265 - loc101B",
+          "state": "Salto",
+          "city": "Salto",
+          "neighborhood": "Salto"
+        },
+        {
+          "id": "22",
+          "lat": -34.909864,
+          "lon": -56.147612,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4532 0254",
+          "address": "Don Bosco 734 loc 4y5",
+          "state": "Soriano",
+          "city": "Soriano",
+          "neighborhood": "Soriano"
+        },
+        {
+          "id": "16",
+          "lat": -34.94072,
+          "lon": -54.934257,
+          "name": "Daniel Cassin",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "4249 4248",
+          "address": "Punta Shopping - Local 314",
+          "state": "Maldonado",
+          "city": "Maldonado",
+          "neighborhood": "Maldonado"
+        }
+      ]
+    },
+    {
+      "id": "divino",
+      "name": "Divino",
+      "description": "Hasta 24 cuotas sin recargo",
+      "entry": "Amoblamientos",
+      "stores": []
+    },
+    {
+      "id": "donPeperone",
+      "name": "Don Peperone",
+      "description": "De lunes a viernes, 15% y 25% de ahorro",
+      "entry": "Gastronomía",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.88885,
+          "lon": -56.057529,
+          "name": "Don Peperone Carrasco",
+          "description": "De lunes a viernes, 15% y 25% de ahorro (incluye los 9ptos de iva)",
+          "notes": "Gastronomía",
+          "phone": "26012098 - 26015177",
+          "address": "Arocena y Otero",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Carrasco"
+        },
+        {
+          "id": "2",
+          "lat": -34.923776,
+          "lon": -56.159477,
+          "name": "Don Peperone Punta Carretas",
+          "description": "De lunes a viernes, 15% y 25% de ahorro (incluye los 9ptos de iva)",
+          "notes": "Gastronomía",
+          "phone": "2711 7628",
+          "address": "José Ellauri 350",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Punta Carretas"
+        },
+        {
+          "id": "3",
+          "lat": -34.90399,
+          "lon": -56.13724,
+          "name": "Don Peperone Montevideo Shopping",
+          "description": "De lunes a viernes, 15% y 25% de ahorro (incluye los 9ptos de iva)",
+          "notes": "Gastronomía",
+          "phone": "26286631 - 26282508",
+          "address": "Avda. Luis Alberto de Herrera 1290",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Buceo"
+        },
+        {
+          "id": "5",
+          "lat": -34.472073,
+          "lon": -57.851834,
+          "name": "Don Peperone Colonia del Sacramento",
+          "description": "De lunes a viernes, 15% y 25% de ahorro (incluye los 9ptos de iva)",
+          "notes": "Gastronomía",
+          "phone": "4523 8118",
+          "address": "Misiones de los Tapes 157",
+          "state": "Colonia",
+          "city": "Colonia del Sacramento",
+          "neighborhood": "Casco Histórico"
+        }
+      ]
+    },
+    {
+      "id": "elTigre",
+      "name": "El Tigre",
+      "description": "Todos los días 15% y 25% de ahorro",
+      "entry": "Gastronomía",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.915335,
+          "lon": -56.158634,
+          "name": "El Tigre",
+          "description": "Todos los días 15% y 25% de ahorro",
+          "notes": "Gastronomía",
+          "phone": "2710 7021",
+          "address": "Scosería 2501",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Pocitos"
+        }
+      ]
+    },
+    {
+      "id": "espacioBA",
+      "name": "Espacio B.A.",
+      "description": "Todos los dìas 15% de ahorro",
+      "entry": "Indumentaria",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.904581,
+          "lon": -56.184009,
+          "name": "Espacio B. A.",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "2908 9891",
+          "address": "Av. 18 de Julio 1477",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Montevideo"
+        }
+      ]
+    },
+    {
+      "id": "feriaMaxima",
+      "name": "Feria Maxima",
+      "description": "Todos los días 25% y 30%",
+      "entry": "Indumentaria",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.908289,
+          "lon": -56.19754,
+          "name": "Feria Máxima",
+          "description": "Todos los días 25% y 30%",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "Hotel Esplendor",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Pocitos"
+        },
+        {
+          "id": "2",
+          "lat": -34.879516,
+          "lon": -56.076639,
+          "name": "Feria Máxima",
+          "description": "Todos los días 25% y 30%",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "Latu",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Latu"
+        },
+        {
+          "id": "3",
+          "lat": -34.950291,
+          "lon": -54.939179,
+          "name": "Feria Máxima",
+          "description": "Todos los días 25% y 30%",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "Conrad",
+          "state": "Punta del Este",
+          "city": "Maldonado",
+          "neighborhood": "Punta del Este"
+        }
+      ]
+    },
+    {
+      "id": "heladeriaIIPortoPuntaDelEste",
+      "name": "Heladería Il Porto Punta del Este",
+      "description": "Todos los dìas 2x1 en vasitos, cucuruchos y palitos",
+      "entry": "Gastronomía",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.964212,
+          "lon": -54.952078,
+          "name": "Gelaterìa Il Porto",
+          "description": "Todos los dìas 2x1 en vasitos, cucuruchos y palitos",
+          "notes": "Gastronomía / Heladería",
+          "phone": "4244 5405",
+          "address": "El Trinquete - Puerto de Punta del Este",
+          "state": "Maldonado",
+          "city": "Punta del Este",
+          "neighborhood": "Puerto"
+        }
+      ]
+    },
+    {
+      "id": "joyeriaRevello",
+      "name": "Joyerìa Revello",
+      "description": "Todos los dìas 15% de ahorro",
+      "entry": "Joyerìa",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.902926,
+          "lon": -56.136065,
+          "name": "Joyerìa Revello",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Joyerìa",
+          "phone": "2622 0575",
+          "address": "Montevideo Shopping - local 239",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "WTC"
+        },
+        {
+          "id": "2",
+          "lat": -34.881024,
+          "lon": -56.081374,
+          "name": "Joyerìa Revello",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Joyerìa",
+          "phone": "2601 7755",
+          "address": "Portones Shopping - local 250",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Carrasco"
+        },
+        {
+          "id": "3",
+          "lat": -34.893715,
+          "lon": -56.166277,
+          "name": "Joyerìa Revello",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Joyerìa",
+          "phone": "",
+          "address": "Tres Cruces Shopping - loc 18",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Tres Cruces"
+        }
+      ]
+    },
+    {
+      "id": "kenoa",
+      "name": "Kenoa",
+      "description": "Todos los días 15% de ahorro",
+      "entry": "Indumentaria",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.912851,
+          "lon": -56.153732,
+          "name": "Kenoa",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "Ellauri 961",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Punta Carretas"
+        }
+      ]
+    },
+    {
+      "id": "laCancha",
+      "name": "La Cancha",
+      "description": "12 cuotas sin recargo",
+      "entry": "Indumentaria",
+      "stores": []
+    },
+    {
+      "id": "laDiecisiete",
+      "name": "La Diecisiete",
+      "description": "Lunes a Viernes 15% y 25%",
+      "entry": "Gastronomía",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.843325,
+          "lon": -55.969193,
+          "name": "La Diecisiete",
+          "description": "Lunes a Viernes 15% y 25%",
+          "notes": "Gastronomía",
+          "phone": "2696 6117",
+          "address": "Rambla Costanera M5 S17 ",
+          "state": "Canelones",
+          "city": "Canelones",
+          "neighborhood": "Lagomar"
+        }
+      ]
+    },
+    {
+      "id": "laMarea",
+      "name": "La Marea",
+      "description": "Todos los dìas 15% y 25% de ahorro",
+      "entry": "Gastronomía",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.9641,
+          "lon": -54.951892,
+          "name": "La Marea",
+          "description": "Todos los dìas 15% y 25% de ahorro",
+          "notes": "Gastronomía",
+          "phone": "4244 4874",
+          "address": "El Trinquete - Puerto de Punta del Este",
+          "state": "Maldonado",
+          "city": "Punta del Este",
+          "neighborhood": "Puerto"
+        }
+      ]
+    },
+    {
+      "id": "laQuia",
+      "name": "La Quia",
+      "description": "Todos los días 15% de ahorro",
+      "entry": "Indumentaria",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.912844,
+          "lon": -56.15372,
+          "name": "La Quia",
+          "description": "Todos los dìas 15% de ahorro",
+          "notes": "Indumentaria",
+          "phone": "",
+          "address": "Ellauri 963 esq. 26 de marzo",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Pocitos"
+        }
+      ]
+    },
+    {
+      "id": "laVaca",
+      "name": "La Vaca",
+      "description": "Todos los días 15% y 25% de ahorro",
+      "entry": "Gastronomía",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.905666,
+          "lon": -56.1354,
+          "name": "La Vaca",
+          "description": "De lunes a viernes, 15% y 25% de ahorro",
+          "notes": "Gastronomía",
+          "phone": "2622 5077",
+          "address": "26 de Marzo 3572",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Buceo"
+        }
+      ]
+    },
+    {
+      "id": "laVigne",
+      "name": "La Vigne",
+      "description": "Todos los días 15% y 25% de ahorro",
+      "entry": "Gastronomía",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.871241,
+          "lon": -56.022392,
+          "name": "La Vigne",
+          "description": "Todos los días 15% y 25% de ahorro",
+          "notes": "Gastronomía",
+          "phone": "094 648 706",
+          "address": "Valdivia y Arizona",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Barra de Carrasco"
+        }
+      ]
+    },
+    {
+      "id": "lifeCinemas",
+      "name": "Life Cinemas",
+      "description": "Todos los días 2x1 en entradas",
+      "entry": "Cines",
+      "stores": [
+        {
+          "id": "1",
+          "lat": -34.940905,
+          "lon": -54.934396,
+          "name": "Life Cinemas",
+          "description": "Todos los días 2x1 en entradas",
+          "notes": "Cines",
+          "phone": "2707 3037",
+          "address": "21 de Setiembre 2838",
+          "state": "Montevideo",
+          "city": "Montevideo",
+          "neighborhood": "Punta carretas"
+        }
+      ]
+    }
+  ]
+}

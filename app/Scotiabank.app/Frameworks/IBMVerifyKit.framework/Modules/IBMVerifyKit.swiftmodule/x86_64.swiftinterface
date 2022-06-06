@@ -1,0 +1,593 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IBMVerifyKit
+import AVFoundation
+import CommonCrypto
+import Foundation
+@_exported import IBMVerifyKit
+import LocalAuthentication
+import Swift
+import UIKit
+import os.log
+import os
+public enum NetworkError : Swift.Error {
+  case invalidURL(url: Swift.String)
+  case invalidHTTPMethod(method: Swift.String)
+  case invalidHTTPHeader(name: Swift.String)
+  case invalidDataFromServer(reason: Swift.String)
+  case parameterEncodingFailed(reason: Swift.String)
+  case underlyingError(error: Swift.Error)
+  case serverError(reason: Swift.String)
+  case clientError(reason: Swift.String)
+  case invalidHttpResponse(statusCode: Swift.Int, errorCode: Swift.String, reason: Swift.String)
+  case unauthenticated
+}
+extension NetworkError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension DateFormatter {
+  public static let iso8061FormatterBehavior: Foundation.DateFormatter
+}
+final public class OAuthContext {
+  public static let shared: IBMVerifyKit.OAuthContext
+  final public var timeoutInterval: Foundation.TimeInterval
+  final public var clientSecret: Swift.String?
+  final public var scope: [Swift.String]? {
+    get
+    set(newState)
+  }
+  final public var headers: IBMVerifyKit.HTTPHeaders {
+    get
+    set(newState)
+  }
+  final public func authorize(_ endpointUrl: Foundation.URL, _ clientId: Swift.String, username: Swift.String, password: Swift.String, parameters: IBMVerifyKit.Parameters? = [:], serverTrustDelegate: Foundation.URLSessionDelegate? = nil, completion: @escaping (IBMVerifyKit.OAuthToken?, Swift.Error?) -> Swift.Void)
+  final public func authorize(_ endpointUrl: Foundation.URL, _ clientId: Swift.String, code: Swift.String, parameters: IBMVerifyKit.Parameters? = [:], serverTrustDelegate: Foundation.URLSessionDelegate? = nil, completion: @escaping (IBMVerifyKit.OAuthToken?, Swift.Error?) -> Swift.Void)
+  final public func refresh(_ endpointUrl: Foundation.URL, _ clientId: Swift.String, refreshToken: Swift.String, parameters: IBMVerifyKit.Parameters? = [:], serverTrustDelegate: Foundation.URLSessionDelegate? = nil, completion: @escaping (IBMVerifyKit.OAuthToken?, Swift.Error?) -> Swift.Void)
+  @objc deinit
+}
+public struct OnPremiseQrScan : IBMVerifyKit.QrScanAuthenticatorProtocol, Swift.Decodable {
+  public let code: Swift.String
+  public let metadataUri: Foundation.URL
+  public let ignoreSslCerts: Swift.Bool
+  public let clientId: Swift.String
+  public init(from decoder: Swift.Decoder) throws
+  public static func parse(_ value: Swift.String) -> IBMVerifyKit.OnPremiseQrScan?
+}
+public enum OTPType : Swift.String, Swift.Codable {
+  case totp
+  case hotp
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct OTPAuthenticator : IBMVerifyKit.AuthenticatorProtocol {
+  public var name: Swift.String
+  public var accountName: Swift.String {
+    get
+    set
+  }
+  public var identifier: Swift.String
+  public let algorithm: Swift.String
+  public let secret: Swift.String?
+  public let digits: Swift.Int?
+  public let period: Swift.Int?
+  public let type: IBMVerifyKit.OTPType
+  public var counter: Swift.Int {
+    get
+    set
+  }
+  public init(secret: Swift.String, name: Swift.String, accountName: Swift.String, type: IBMVerifyKit.OTPType? = .totp, digits: Swift.Int? = 6, algorithm: IBMVerifyKit.HmacAlgorithm? = HmacAlgorithm(), period: Swift.Int? = 30)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct HOTPGenerator {
+  public var counter: Swift.Int {
+    get
+    }
+  public init?(secret: Swift.String, digits: Swift.Int = 6, algorithm: IBMVerifyKit.HmacAlgorithm = HmacAlgorithm(), counter: Swift.Int)
+  mutating public func create() -> Swift.String
+}
+public typealias Parameters = [Swift.String : Any]
+public typealias HTTPHeaders = [Swift.String : Swift.String]
+public struct OnPremiseAuthenticator : IBMVerifyKit.MfaAuthenticatorProtocol {
+  public var name: Swift.String
+  public var identifier: Swift.String
+  public var registrationUri: Foundation.URL
+  public var transactionUri: Foundation.URL
+  public var theme: [Swift.String : Swift.String]
+  public var features: [Swift.String]
+  public var accountName: Swift.String {
+    get
+    set
+  }
+  public var token: IBMVerifyKit.OAuthToken {
+    get
+    set
+  }
+  public var availableMethods: [IBMVerifyKit.AuthenticationMethodProtocol] {
+    get
+    set
+  }
+  public var enrolledMethods: [IBMVerifyKit.AuthenticationMethodProtocol] {
+    get
+    set
+  }
+  public var clientId: Swift.String {
+    get
+    set
+  }
+  public var qrloginUri: Foundation.URL? {
+    get
+    set
+  }
+  public var ignoreSSL: Swift.Bool {
+    get
+  }
+  public var publicKeyCertificate: Swift.String? {
+    get
+    set
+  }
+  public var serverTrustDelegate: Foundation.URLSessionDelegate? {
+    get
+    set
+  }
+}
+extension OnPremiseAuthenticator : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension Date {
+  public var iso8061FormatterBehavior: Swift.String {
+    get
+  }
+}
+public struct OTPQrScan : IBMVerifyKit.QrScanAuthenticatorProtocol {
+  public let type: Swift.String
+  public var issuer: Swift.String?
+  public let secret: Swift.String
+  public var username: Swift.String?
+  public var algorithm: IBMVerifyKit.HmacAlgorithm
+  public var digits: Swift.Int
+  public var counter: Swift.Int
+  public var period: Swift.Int
+  public static func parse(_ value: Swift.String) -> IBMVerifyKit.OTPQrScan?
+}
+public enum HashAlgorithm : Swift.Int {
+  case sha1
+  case sha256
+  case sha512
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol AlgorithmProtocol {
+  associatedtype T
+  var name: Swift.String { get }
+  var underlyingCryptoType: Self.T { get }
+  var hashType: IBMVerifyKit.HashAlgorithm { get set }
+  init()
+  init?(_ name: Swift.String)
+  init?(_ rawValue: Swift.Int)
+}
+extension AlgorithmProtocol {
+  public init(_ hashType: IBMVerifyKit.HashAlgorithm)
+  public init?(_ rawValue: Swift.Int)
+  public init?(_ name: Swift.String)
+  public var name: Swift.String {
+    get
+  }
+}
+public struct HmacAlgorithm : IBMVerifyKit.AlgorithmProtocol {
+  public typealias T = CommonCrypto.CCHmacAlgorithm
+  public init()
+  public var hashType: IBMVerifyKit.HashAlgorithm
+  public var underlyingCryptoType: CommonCrypto.CCHmacAlgorithm {
+    get
+  }
+  public var underlyingCryptoLength: Swift.Int {
+    get
+  }
+  public func hash(with value: Swift.String) -> Foundation.Data?
+}
+public struct RsaAlgorithm : IBMVerifyKit.AlgorithmProtocol {
+  public typealias T = Security.SecKeyAlgorithm
+  public init()
+  public var hashType: IBMVerifyKit.HashAlgorithm
+  public var underlyingCryptoType: Security.SecKeyAlgorithm {
+    get
+  }
+}
+public struct CloudQrScan : IBMVerifyKit.QrScanAuthenticatorProtocol, Swift.Decodable {
+  public let code: Swift.String
+  public let metadataUri: Foundation.URL
+  public var version: Swift.String {
+    get
+  }
+  public var accountName: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+  public static func parse(_ value: Swift.String) -> IBMVerifyKit.CloudQrScan?
+}
+public enum ServiceError : Swift.Error {
+  case invalidScanResult
+  case invalidAccessToken
+  case invalidDataResponse
+  case invalidSignedData
+  case notSupported
+  case invalidArgument(name: Swift.String)
+  case invalidDataParse(name: Swift.String)
+  case invalidMetadata
+  case enrollmentMethodFailed(type: Swift.String)
+}
+extension ServiceError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public protocol QrScanReaderProtocol {
+  var videoPreview: QuartzCore.CALayer { get }
+  func start()
+  func stop()
+}
+public protocol QrScanReaderDelegate : AnyObject {
+  func didScan(with result: IBMVerifyKit.QrScanProtocol)
+}
+public enum TransactionAttribute : Swift.String, Swift.Codable {
+  case ipAddress
+  case location
+  case image
+  case userAgent
+  case type
+  case custom
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct PendingTransaction {
+  public let transactionId: Swift.String
+  public var transactionIdShort: Swift.String {
+    get
+  }
+  public let message: Swift.String
+  public let postbackUri: Foundation.URL
+  public let subType: IBMVerifyKit.SubType
+  public let dataToSign: Swift.String
+  public let signatureMethodId: Swift.String
+  public let timeStamp: Foundation.Date
+  public let additionalData: [IBMVerifyKit.TransactionAttribute : Swift.String]
+}
+public struct SignatureAuthenticationMethod : IBMVerifyKit.AuthenticationMethodProtocol {
+  public static var type: IBMVerifyKit.MethodType
+  public let enabled: Swift.Bool
+  public var enrollmentUri: Foundation.URL?
+  public var id: Swift.String?
+  public let algorithm: Swift.String
+  public let supportedAlgorithms: [Swift.String]?
+  public let subType: IBMVerifyKit.SubType
+  public var publicKey: Swift.String?
+  public var signedData: Swift.String?
+  public var additionalData: [[Swift.String : Swift.String]]?
+}
+extension SignatureAuthenticationMethod {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public enum KeychainError : Swift.Error {
+  case noKeyNameProvided
+  case keyNameNotFound
+  case duplicateItem
+  case noDataToSignProvided
+  case privateKeyNotFound
+  case underlyingError(message: Swift.String)
+}
+@objc final public class SelfSignedCertificateDelegate : ObjectiveC.NSObject, Foundation.URLSessionDelegate {
+  @objc final public func urlSession(_: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @objc final public func urlSession(_: Foundation.URLSession, didBecomeInvalidWithError error: Swift.Error?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc final public class PinnedCertificateDelegate : ObjectiveC.NSObject, Foundation.URLSessionDelegate {
+  @objc final public func urlSession(_: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum SubType : Swift.String, Swift.Codable {
+  case totp
+  case hotp
+  case fingerprint
+  case userPresence
+  case face
+  case iris
+  case retina
+  case voice
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension SubType {
+  public init?(_ type: Swift.String)
+}
+public enum MethodType : Swift.String, Swift.Codable {
+  case totp
+  case signature
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol AuthenticationMethodProtocol : Swift.Decodable, Swift.Encodable {
+  static var type: IBMVerifyKit.MethodType { get }
+  var enabled: Swift.Bool { get }
+  var enrollmentUri: Foundation.URL? { get set }
+  var algorithm: Swift.String { get }
+}
+final public class AuthenticatorContext {
+  public enum UserAction : Swift.String {
+    case deny
+    case markAsFraud
+    case verify
+    case failedBiometry
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public static let shared: IBMVerifyKit.AuthenticatorContext
+  final public var headers: IBMVerifyKit.HTTPHeaders {
+    get
+    set(newState)
+  }
+  final public var timeoutInterval: Foundation.TimeInterval
+  final public func create<T>(from qrScan: T, completion: @escaping (IBMVerifyKit.AuthenticatorProtocol?, Swift.Error?) -> Swift.Void) where T : IBMVerifyKit.QrScanAuthenticatorProtocol
+  final public func refresh(with authenticator: inout IBMVerifyKit.MfaAuthenticatorProtocol, completion: @escaping (Swift.Error?) -> Swift.Void)
+  final public func enroll(with authenticator: inout IBMVerifyKit.MfaAuthenticatorProtocol, authenticationMethod: [IBMVerifyKit.SignatureAuthenticationMethod], completion: @escaping ([Swift.Error]?) -> Swift.Void)
+  final public func enroll(with authenticator: inout IBMVerifyKit.MfaAuthenticatorProtocol, completion: @escaping (Swift.Error?) -> Swift.Void)
+  final public func completeTransaction(with authenticator: IBMVerifyKit.MfaAuthenticatorProtocol, postbackUri: Foundation.URL, signedData: Swift.String? = nil, userAction: IBMVerifyKit.AuthenticatorContext.UserAction? = .verify, signatureMethodId: Swift.String? = nil, completion: @escaping (Swift.Error?) -> Swift.Void)
+  final public func nextTransaction(with authenticator: IBMVerifyKit.MfaAuthenticatorProtocol, transactionId: Swift.String? = nil, completion: @escaping (IBMVerifyKit.PendingTransaction?, Swift.Int, Swift.Error?) -> Swift.Void)
+  final public func remove(with authenticator: IBMVerifyKit.MfaAuthenticatorProtocol, completion: @escaping (Swift.Error?) -> Swift.Void)
+  final public func login(with authenticator: IBMVerifyKit.MfaAuthenticatorProtocol, loginUri: Foundation.URL, code: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
+  @objc deinit
+}
+public struct OnPremiseLoginQrScan : IBMVerifyKit.LoginQrScanProtocol, Swift.Decodable {
+  public let code: Swift.String
+  public let locationUri: Foundation.URL
+  public let version: Swift.Int
+  public let ignoreSslCerts: Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+  public static func parse(_ value: Swift.String) -> IBMVerifyKit.OnPremiseLoginQrScan?
+}
+public enum RegistrationAttribute : Swift.String {
+  case deviceIdentifier
+  case deviceName
+  case deviceType
+  case deviceJailbroken
+  case osVersion
+  case platformType
+  case fingerprintSupport
+  case faceSupport
+  case biometryEnrolled
+  case biometryName
+  case frontCameraSupport
+  case pushTokenIdentifier
+  case applicationIdentifier
+  public static func value(_ attribute: IBMVerifyKit.RegistrationAttribute) -> Any
+  public static var allValues: [Swift.String : Any] {
+    get
+  }
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct KeychainHelper {
+  public static func export(_ rawPublicKeyBytes: Foundation.Data, base64EncodingOptions: Foundation.Data.Base64EncodingOptions = []) -> Swift.String?
+  public static func create(with name: Swift.String, value: Swift.String, authenticationRequired: Security.SecAccessControlCreateFlags? = nil, completion: (Swift.Bool, IBMVerifyKit.KeychainError?) -> Swift.Void)
+  public static func create(with name: Swift.String, authenticationRequired: Security.SecAccessControlCreateFlags? = nil, completion: (Swift.Bool, Foundation.Data?) -> Swift.Void)
+  public static func read(from name: Swift.String, localizedReason: Swift.String? = nil) -> (value: Swift.String?, error: IBMVerifyKit.KeychainError?)
+  public static func rename(from name: Swift.String, to: Swift.String, authenticationRequired _: Security.SecAccessControlCreateFlags? = nil) -> Swift.Bool
+  public static func sign(with name: Swift.String, value: Swift.String, algorithm: IBMVerifyKit.RsaAlgorithm = RsaAlgorithm(.sha512), localizedReason: Swift.String? = nil, base64EncodingOptions: Foundation.Data.Base64EncodingOptions = []) -> (value: Swift.String?, error: IBMVerifyKit.KeychainError?)
+  public static func delete(with name: Swift.String, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  public static func hasAuthenticationSettingsChanged(_ evaluatedPolicyDomainState: Foundation.Data? = nil) -> Swift.Bool
+  public static func exists(using name: Swift.String) -> Swift.Bool
+}
+public struct CloudAuthenticator : IBMVerifyKit.MfaAuthenticatorProtocol {
+  public var name: Swift.String
+  public var identifier: Swift.String
+  public var registrationUri: Foundation.URL
+  public var transactionUri: Foundation.URL
+  public var custom: [Swift.String : Swift.String]
+  public var theme: [Swift.String : Swift.String]
+  public var features: [Swift.String]
+  public var accountName: Swift.String {
+    get
+    set
+  }
+  public var token: IBMVerifyKit.OAuthToken {
+    get
+    set
+  }
+  public var availableMethods: [IBMVerifyKit.AuthenticationMethodProtocol] {
+    get
+    set
+  }
+  public var enrolledMethods: [IBMVerifyKit.AuthenticationMethodProtocol] {
+    get
+    set
+  }
+  public var publicKeyCertificate: Swift.String? {
+    get
+    set
+  }
+  public var serverTrustDelegate: Foundation.URLSessionDelegate? {
+    get
+    set
+  }
+}
+extension CloudAuthenticator : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public protocol QrScanAuthenticatorProtocol : IBMVerifyKit.QrScanProtocol {
+}
+public protocol LoginQrScanProtocol : IBMVerifyKit.QrScanProtocol {
+  var code: Swift.String { get }
+  var locationUri: Foundation.URL { get }
+}
+public protocol QrScanProtocol {
+  static func parse(_ value: Swift.String) -> Self?
+}
+public struct TOTPGenerator {
+  public var period: Foundation.TimeInterval {
+    get
+    }
+  public init?(secret: Swift.String, digits: Swift.Int = 6, algorithm: IBMVerifyKit.HmacAlgorithm = HmacAlgorithm(), period: Foundation.TimeInterval = 30)
+  public func create(_ timeInterval: Foundation.TimeInterval = Date().timeIntervalSince1970) -> Swift.String
+  public static func remainingTime(_ timeInterval: Foundation.TimeInterval = 30) -> Swift.Int?
+}
+public struct OAuthToken : Swift.Codable {
+  public let accessToken: Swift.String
+  public let refreshToken: Swift.String
+  public let tokenType: Swift.String
+  public let expiresIn: Swift.Int
+  public let scope: [Swift.String]
+  public let expiresOn: Foundation.Date
+  public var tokenExpired: Swift.Bool {
+    get
+  }
+  public var shouldRefresh: Swift.Bool {
+    get
+  }
+  public var authorizationHeader: Swift.String {
+    get
+  }
+  public let additionalData: [Swift.String : Any]
+}
+extension OAuthToken {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct FrameworkHelper {
+  public static var showDebugInfo: Swift.Bool {
+    get
+    set
+  }
+  public static var version: Swift.String {
+    get
+  }
+  public static var applicationName: Swift.String {
+    get
+  }
+  public static var applicationVersion: Swift.String {
+    get
+  }
+}
+public struct CloudLoginQrScan : IBMVerifyKit.LoginQrScanProtocol, Swift.Decodable {
+  public let code: Swift.String
+  public let locationUri: Foundation.URL
+  public let serviceName: Swift.String
+  public init(from decoder: Swift.Decoder) throws
+  public static func parse(_ value: Swift.String) -> IBMVerifyKit.CloudLoginQrScan?
+}
+public struct TOTPAuthenticationMethod : IBMVerifyKit.AuthenticationMethodProtocol {
+  public static var type: IBMVerifyKit.MethodType
+  public let enabled: Swift.Bool
+  public var enrollmentUri: Foundation.URL?
+  public var id: Swift.String?
+  public let algorithm: Swift.String
+  public let secret: Swift.String?
+  public let digits: Swift.Int?
+  public let period: Swift.Int?
+}
+extension TOTPAuthenticationMethod {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@objc public class QrScanReader : ObjectiveC.NSObject {
+  public var videoPreview: QuartzCore.CALayer {
+    get
+    }
+  weak public var delegate: IBMVerifyKit.QrScanReaderDelegate?
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension QrScanReader : AVFoundation.AVCaptureMetadataOutputObjectsDelegate {
+  @objc dynamic public func metadataOutput(_ output: AVFoundation.AVCaptureMetadataOutput, didOutput metadataObjects: [AVFoundation.AVMetadataObject], from connection: AVFoundation.AVCaptureConnection)
+}
+extension QrScanReader : IBMVerifyKit.QrScanReaderProtocol {
+  public func start()
+  public func stop()
+}
+extension String {
+  public var dataValue: Foundation.Data? {
+    get
+  }
+  public var iso8061FormatterBehavior: Foundation.Date? {
+    get
+  }
+  public var htmlToAttributedString: Foundation.NSAttributedString {
+    get
+  }
+  public static func localize(_ key: Swift.String, comment: Swift.String = "") -> Swift.String
+  public static func localize(_ key: Swift.String, comment: Swift.String = "", bundle: Foundation.Bundle = Bundle.main) -> Swift.String
+  public var urlSafeEncodedValue: Swift.String {
+    get
+  }
+  public var base32DecodedData: Foundation.Data? {
+    get
+  }
+}
+extension NSData.Base64EncodingOptions {
+  public static let safeUrlCharacters: Foundation.Data.Base64EncodingOptions
+  public static let noPaddingCharacters: Foundation.Data.Base64EncodingOptions
+}
+public protocol AuthenticatorProtocol : Swift.Decodable, Swift.Encodable {
+  var name: Swift.String { get }
+  var identifier: Swift.String { get }
+  var accountName: Swift.String { get set }
+}
+extension AuthenticatorProtocol {
+  public func encode() -> Foundation.Data?
+}
+public protocol MfaAuthenticatorProtocol : IBMVerifyKit.AuthenticatorProtocol {
+  var theme: [Swift.String : Swift.String] { get }
+  var features: [Swift.String] { get }
+  var registrationUri: Foundation.URL { get }
+  var transactionUri: Foundation.URL { get }
+  var token: IBMVerifyKit.OAuthToken { get set }
+  var availableMethods: [IBMVerifyKit.AuthenticationMethodProtocol] { get set }
+  var enrolledMethods: [IBMVerifyKit.AuthenticationMethodProtocol] { get set }
+  var publicKeyCertificate: Swift.String? { get set }
+  var serverTrustDelegate: Foundation.URLSessionDelegate? { get set }
+}
+extension IBMVerifyKit.OTPType : Swift.Equatable {}
+extension IBMVerifyKit.OTPType : Swift.Hashable {}
+extension IBMVerifyKit.OTPType : Swift.RawRepresentable {}
+extension IBMVerifyKit.HashAlgorithm : Swift.Equatable {}
+extension IBMVerifyKit.HashAlgorithm : Swift.Hashable {}
+extension IBMVerifyKit.HashAlgorithm : Swift.RawRepresentable {}
+extension IBMVerifyKit.TransactionAttribute : Swift.Equatable {}
+extension IBMVerifyKit.TransactionAttribute : Swift.Hashable {}
+extension IBMVerifyKit.TransactionAttribute : Swift.RawRepresentable {}
+extension IBMVerifyKit.SubType : Swift.Hashable {}
+extension IBMVerifyKit.SubType : Swift.RawRepresentable {}
+extension IBMVerifyKit.MethodType : Swift.Equatable {}
+extension IBMVerifyKit.MethodType : Swift.Hashable {}
+extension IBMVerifyKit.MethodType : Swift.RawRepresentable {}
+extension IBMVerifyKit.AuthenticatorContext.UserAction : Swift.Equatable {}
+extension IBMVerifyKit.AuthenticatorContext.UserAction : Swift.Hashable {}
+extension IBMVerifyKit.AuthenticatorContext.UserAction : Swift.RawRepresentable {}
+extension IBMVerifyKit.RegistrationAttribute : Swift.Equatable {}
+extension IBMVerifyKit.RegistrationAttribute : Swift.Hashable {}
+extension IBMVerifyKit.RegistrationAttribute : Swift.RawRepresentable {}
