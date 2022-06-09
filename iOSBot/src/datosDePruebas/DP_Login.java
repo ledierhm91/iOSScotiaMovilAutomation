@@ -62,7 +62,7 @@ public class DP_Login{
 	  						break;
 	            case 8:  	
 	            	usuario = "27051529";
-	        		pin = "1234";
+	        		pin = "2580";
 	        		password = "Testing01";
 	  						break;
 	            case 9:  	
