@@ -13,6 +13,8 @@ package framework;
 import java.io.File;
 import java.net.URL;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -41,14 +43,14 @@ public class Config {
 		 //capabilities.setCapability("deviceName", "iPhone 5s");
 		
 		capabilities.setCapability("platformName", "iOS");
-		capabilities.setCapability("platformVersion", "14.5"); 
+		capabilities.setCapability("platformVersion", "15.5"); 
 
 		capabilities.setCapability("automationName", "XCUITest");
 		
 			capabilities.setCapability("locationServicesEnabled", "true");
 		capabilities.setCapability("locationServicesAuthorized", "true");
-		capabilities.setCapability("autoAcceptAlerts", "true");
-		   capabilities.setCapability("autoGrantPermissions", "true");
+		//capabilities.setCapability("autoAcceptAlerts", "true"); // no se puede habilitar porque afecta los mensajes de confirmacion de la app
+		  capabilities.setCapability("autoGrantPermissions", "true");
 		
 		
 	//	capabilities.setCapability("permissions", "{\"uy.com.scotiabank.scotiabankUPP\": {\"location\": \"inuse\"}}");
@@ -69,6 +71,7 @@ public class Config {
 		// ---------------------------------------------------------------------------------------------
 
 		driver = new AppiumDriver(new URL("http://127.0.0.1:" + portNumber + "/wd/hub"), capabilities);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
 		Frmwrk.celu = udid;
 

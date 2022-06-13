@@ -13,7 +13,7 @@ public class UI_Menu_Izq {
 	 
 	 public void home () throws Exception
 		{
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 	 //   c.swipeHLR();
 	   // c.swipeHRL();
 	    //c.swipeHLR();
@@ -69,7 +69,7 @@ public class UI_Menu_Izq {
 	 public void salir () throws Exception
 		{
 		// Config.esperar("//XCUIElementTypeApplication[@name=\"" + Frmwrk.NombreApp + "\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton");
-		 Thread.sleep(2000);
+		// Thread.sleep(2000);
 		 
 		 MobileElement btn_salir = (MobileElement) Config.driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"" + Frmwrk.NombreApp + "\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeButton"));
 	    btn_salir.click(); 
@@ -77,7 +77,7 @@ public class UI_Menu_Izq {
 	    Frmwrk.logEvidencia(Config.globalCP, "Acepta salir del sistema?");
 	    
 	    //Config.esperar("//XCUIElementTypeButton[@name=\"Aceptar\"]");
-	    Thread.sleep(2000);
+	   // Thread.sleep(2000);
 	    MobileElement btn_aceptar = (MobileElement) Config.driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Aceptar\"]"));
 	    btn_aceptar.click(); 
 	    }	
