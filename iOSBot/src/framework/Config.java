@@ -41,7 +41,7 @@ public class Config {
 		 //capabilities.setCapability("deviceName", "iPhone 5s");
 		
 		capabilities.setCapability("platformName", "iOS");
-		capabilities.setCapability("platformVersion", "15.5"); 
+		capabilities.setCapability("platformVersion", "14.5"); 
 
 		capabilities.setCapability("automationName", "XCUITest");
 		
@@ -58,7 +58,7 @@ public class Config {
 		
 		
 		 String appUrl = System.getProperty("user.dir") + File.separator + "app"  + File.separator + "Scotiabank.app";
-	       capabilities.setCapability("app",appUrl);
+	     capabilities.setCapability("app",appUrl);
 		
 	   // capabilities.setCapability("udid", udid);
 
