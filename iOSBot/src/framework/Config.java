@@ -45,22 +45,17 @@ public class Config {
 
 		capabilities.setCapability("automationName", "XCUITest");
 		
-		//	capabilities.setCapability("locationServicesEnabled", "true");
-//		capabilities.setCapability("locationServicesAuthorized", "true");
+			capabilities.setCapability("locationServicesEnabled", "true");
+		capabilities.setCapability("locationServicesAuthorized", "true");
 		capabilities.setCapability("autoAcceptAlerts", "true");
+		   capabilities.setCapability("autoGrantPermissions", "true");
+		
 		
 	//	capabilities.setCapability("permissions", "{\"uy.com.scotiabank.scotiabankUPP\": {\"location\": \"inuse\"}}");
 		//capabilities.setCapability("permissions", "{\"uy.com.scotiabank.scotiabankUPP\": {\"faceid\": \"NO\"}}");
 
 		capabilities.setCapability("app", "uy.com.scotiabank.scotiabankUPP");
 		
-		//capabilities.setCapability("app",  "//Users//scotibank//Documents//Scotiabank-2.4.1 350.app"); //anterior a clave digital
-		
-		
-		
-		//capabilities.setCapability("app",  "/Users/ledier.hernandez/Library/CloudStorage/OneDrive-Perficient,Inc/Repositorios/iOSScotiaMovilAutomation/app/Scotiabank.app"); //clave digital
-		
-		//capabilities.setCapability("app",  "/Users/clara.brizuela/Library/CloudStorage/OneDrive-Perficient,Inc/Repositorio/iOSScotiaMovilAutomation/app/Scotiabank.app"); //clave digital
 		
 		 String appUrl = System.getProperty("user.dir") + File.separator + "app"  + File.separator + "Scotiabank.app";
 	       capabilities.setCapability("app",appUrl);
