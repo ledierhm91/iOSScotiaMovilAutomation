@@ -23,7 +23,7 @@ public class Login {
 	
 	UI_Login fp = PageFactory.initElements(Config.driver, UI_Login.class);	
 	
-	Thread.sleep(5000);
+	//Thread.sleep(5000);
 	
 //	fp.InLoginP1(usr,pin);	
 //	fp.InLoginP2(pwd);
@@ -31,7 +31,7 @@ public class Login {
 	fp.InLoginP3(usr,pin,pwd);	
 	
 	
-	Thread.sleep(10000);
+	//Thread.sleep(10000);
 	//Config.esperar("last_mov_text");
 	paso = "Se muestra pantalla principal";
 	Frmwrk.logEvidencia(Config.globalCP, paso);	

@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import framework.Config;
 import framework.Frmwrk;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class UI_Login {
 	
@@ -17,14 +18,10 @@ public class UI_Login {
 	MobileElement version = (MobileElement) Config.driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"" + Frmwrk.NombreApp + "\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[1]"));
  	 Frmwrk.versionApp= version.getText(); 
  	 
- 	 
-
- 	 
- 	 
- 	 
- 	 
-	// System.out.println ("version " + Frmwrk.versionApp);         	 By.xpath("//XCUIElementTypeApplication[@name=\"Scotia Móvil\"]/XCUIElementTypeWindow[1]
+ 	
 	}
+	
+	
 	
 	public void tutorial() throws Exception
 	{
@@ -67,14 +64,12 @@ public class UI_Login {
     Frmwrk.logEvidencia(Config.globalCP, "Usuario y PIN ingresados");
     
     MobileElement continuar = (MobileElement) Config.driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Continuar\"]"));
-    continuar.click();    
-    Thread.sleep(10000);    		
+    continuar.click();    	
 	}	
 	
 	public void InLoginP2 (String password) throws Exception
 	{
-		Thread.sleep(2000);
-	//Config.esperar("//XCUIElementTypeApplication[@name=\"Scotiabank\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField");
+		
 	MobileElement pass = (MobileElement) Config.driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"" + Frmwrk.NombreApp + "\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeSecureTextField"));
     pass.click();
     pass.clear();
@@ -95,7 +90,6 @@ public class UI_Login {
     MobileElement ingresar = (MobileElement) Config.driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Ingresar\"]"));
     ingresar.click();    
     
-    Thread.sleep(20000);
     
     //clickeamos en el boton cancelar del mensaje que nos informa sobre la huella
     
@@ -145,7 +139,6 @@ public class UI_Login {
   //  usuario.clear();
     usuario.setValue(user);    
     
-    Thread.sleep(4000);
     Frmwrk.logEvidencia(Config.globalCP, "Usuario ingresado");
         
     
@@ -158,21 +151,19 @@ public class UI_Login {
     
  //   pin.clear();
     pin.setValue(Config.globalPin);
-    Thread.sleep(3000);
     
     Frmwrk.logEvidencia(Config.globalCP, "Usuario y PIN ingresados");
     
    
-		Thread.sleep(2000);
+
 	//Config.esperar("//XCUIElementTypeApplication[@name=\"Scotiabank\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField");
 		
 		//MobileElement pass = (MobileElement) Config.driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"" + Frmwrk.NombreApp + "\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeSecureTextField"));
-		MobileElement pass = (MobileElement) Config.driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"" + Frmwrk.NombreApp + "\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeSecureTextField"));
-		
+		//MobileElement pass = (MobileElement) Config.driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"" + Frmwrk.NombreApp + "\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]/XCUIElementTypeSecureTextField"));
+	MobileElement pass= (MobileElement) Config.driver.findElement(By.xpath("//XCUIElementTypeSecureTextField[@name=\"passwordTextField\"]"));	
     pass.click();
 //    pass.clear();
     pass.setValue(password);
-    Thread.sleep(1000);
         
     Frmwrk.logEvidencia(Config.globalCP, "Password ingresado");      
     
@@ -197,7 +188,6 @@ public class UI_Login {
     continuar.click();     		
 	 
     
-    Thread.sleep(3000);
     
     //clickeamos en el boton cancelar del mensaje que nos informa sobre la huella
     
@@ -217,7 +207,7 @@ public class UI_Login {
  MobileElement cancelar = (MobileElement) Config.driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Cancelar\"]"));
    
    //Se obtuvo el elemento cancelar que proviene del mensaje de la huella, a travès de AccesibilityId
-   //MobileElement cancelar = (MobileElement) Config.driver.findElementByAccessibilityId("Cancelar");
+ //  MobileElement cancelar = (MobileElement) Config.driver.findElementByAccessibilityId("Cancelar");
    
  //XCUIElementTypeButton[@name="Cancelar"]
    
