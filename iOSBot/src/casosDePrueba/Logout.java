@@ -21,7 +21,7 @@ public class Logout {
 	fp.home();	
 	fp.salir();	
 	
-	Thread.sleep(3000);
+	//Thread.sleep(3000);
 	paso = "Salir";
 	Frmwrk.logEvidencia(Config.globalCP, paso);		
 	

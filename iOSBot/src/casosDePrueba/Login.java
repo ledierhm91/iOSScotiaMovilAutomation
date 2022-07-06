@@ -30,8 +30,6 @@ public class Login {
 	
 	fp.InLoginP3(usr,pin,pwd);	
 	
-	
-	//Thread.sleep(10000);
 	//Config.esperar("last_mov_text");
 	paso = "Se muestra pantalla principal";
 	Frmwrk.logEvidencia(Config.globalCP, paso);	

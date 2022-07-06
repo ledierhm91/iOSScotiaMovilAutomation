@@ -21,6 +21,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
+
 import framework.Frmwrk;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -49,7 +51,7 @@ public class Config {
 		
 			capabilities.setCapability("locationServicesEnabled", "true");
 		capabilities.setCapability("locationServicesAuthorized", "true");
-		//capabilities.setCapability("autoAcceptAlerts", "true"); // no se puede habilitar porque afecta los mensajes de confirmacion de la app
+		// capabilities.setCapability("autoAcceptAlerts", "true"); // no se puede habilitar porque afecta los mensajes de confirmacion de la app
 		  capabilities.setCapability("autoGrantPermissions", "true");
 		
 		
@@ -82,6 +84,14 @@ public class Config {
 			driver.quit();
 		}
 	}
+	
+	public static void waitForVisibility(MobileElement e) {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOf(e));
+	}
+	
+
+
 
 	public static MobileElement mobileElement;
 
@@ -104,6 +114,8 @@ public class Config {
 			return isElementPresent;
 		}
 	}
+	
+	
 
 	public static boolean esperar(String targetResourceId) {
 		boolean isElementPresent;

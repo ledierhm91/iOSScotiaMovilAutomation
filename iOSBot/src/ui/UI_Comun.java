@@ -434,6 +434,11 @@ public class UI_Comun {
 			 MobileElement btnok = (MobileElement) Config.driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"OK\"]"));
 			 btnok.click(); 
 	  }
+	  
+		public void click(MobileElement e) {
+			Config.waitForVisibility(e);
+			e.click();
+		}
 
 	  
 

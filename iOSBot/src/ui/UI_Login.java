@@ -211,7 +211,9 @@ public class UI_Login {
    
  //XCUIElementTypeButton[@name="Cancelar"]
    
-    	cancelar.click();
+    	//cancelar.click();
+       c.click(cancelar);
+ 
     	 Frmwrk.first=true;
     	 
     	 
