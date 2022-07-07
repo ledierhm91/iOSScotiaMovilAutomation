@@ -57,7 +57,9 @@ public class IOSSuiteModular{
 	Frmwrk.logResultadoPassed((System.nanoTime() - startTime), Config.globalCP);
 	//Thread.sleep(4000);
 	//------------------Tutorial-----------------------------  
-	UI_Login L = PageFactory.initElements(Config.driver, UI_Login.class);		    
+	UI_Login L = PageFactory.initElements(Config.driver, UI_Login.class);	
+	
+
     Config.globalCP = "Tutorial - " + Frmwrk.obtenerFecha();
     Config.globalDescrip = "Recorremos el tutorial para verificar las diferentes pantallas"  ;
     L.tutorial();	
