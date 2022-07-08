@@ -21,16 +21,17 @@ public class Login {
 	
 	Frmwrk.versionOSNum= (String) Config.driver.getCapabilities().getCapability("platformVersion");
 	
-	UI_Login fp = PageFactory.initElements(Config.driver, UI_Login.class);	
 	
-	//Thread.sleep(5000);
+	//No es necesario inicializar el PageFactory aqui, resolvemos con crear un objeto de la clase
+	//UI_Login fp = PageFactory.initElements(Config.driver, UI_Login.class);
+	UI_Login fp= new UI_Login();
+	
 	
 //	fp.InLoginP1(usr,pin);	
 //	fp.InLoginP2(pwd);
 	
 	fp.InLoginP3(usr,pin,pwd);	
 	
-	//Config.esperar("last_mov_text");
 	paso = "Se muestra pantalla principal";
 	Frmwrk.logEvidencia(Config.globalCP, paso);	
 			

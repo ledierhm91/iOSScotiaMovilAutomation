@@ -24,7 +24,8 @@ public class UI_Comun {
 	
 	
 	  public UI_Comun() 
-	  { PageFactory.initElements(new  AppiumFieldDecorator(Config.driver), this);
+	  { 
+		  PageFactory.initElements(new  AppiumFieldDecorator(Config.driver), this); 
 	  }
 	 
 		
@@ -47,8 +48,7 @@ public class UI_Comun {
 	  return e.isEnabled(); 
 	  }
 	  
-	  public boolean isDisplayed(MobileElement e) { 
-		  Config.waitForVisibility(e);
+	  public boolean isDisplayed(MobileElement e) {
 		  return e.isDisplayed(); 
 		  }
 		 

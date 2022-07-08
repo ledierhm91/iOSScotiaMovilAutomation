@@ -98,7 +98,7 @@ public class Config {
 	}
 	
 	public static void waitForVisibility(MobileElement e) {
-		WebDriverWait wait = new WebDriverWait(driver, 60);
+		WebDriverWait wait = new WebDriverWait(driver, 140);
 		wait.until(ExpectedConditions.visibilityOf(e));
 	}
 	

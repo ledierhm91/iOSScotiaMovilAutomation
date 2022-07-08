@@ -9,7 +9,7 @@ import io.appium.java_client.ios.IOSElement;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class UI_Login extends UI_Comun {
-	
+	 
 		///Tutorial
 	String  btnSaltarPresentacion = "//XCUIElementTypeButton[@name=\"Saltar Presentación\"]";
 	String btn_tour = "//XCUIElementTypeButton[@name=\"Ingresar\"]";

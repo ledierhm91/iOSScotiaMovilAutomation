@@ -57,7 +57,11 @@ public class IOSSuiteModular{
 	Frmwrk.logResultadoPassed((System.nanoTime() - startTime), Config.globalCP);
 	//Thread.sleep(4000);
 	//------------------Tutorial-----------------------------  
-	UI_Login L = PageFactory.initElements(Config.driver, UI_Login.class);	
+	
+	//No es necesario inicializar el PageFactory aqui, resolvemos con crear un objeto de la clase
+	//UI_Login L =PageFactory.initElements(Config.driver, UI_Login.class);
+	UI_Login L = new UI_Login();
+		
 	
 
     Config.globalCP = "Tutorial - " + Frmwrk.obtenerFecha();
@@ -74,7 +78,8 @@ public class IOSSuiteModular{
 	
 	
 	 	public void modLogOut () throws Exception
-		{Logout.salir();}
+		{Logout.salir();
+		}
 	 		 	
 		public void modLogIn (String Origen, Integer juegoDatos) throws Exception
 		{
