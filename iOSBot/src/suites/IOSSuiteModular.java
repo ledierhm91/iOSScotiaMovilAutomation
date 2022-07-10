@@ -55,7 +55,7 @@ public class IOSSuiteModular{
 	Frmwrk.logEvidenciaX3(Config.globalCP, "Splash");
 	//-------------------------------------------------------
 	Frmwrk.logResultadoPassed((System.nanoTime() - startTime), Config.globalCP);
-	//Thread.sleep(4000);
+	Thread.sleep(4000);
 	//------------------Tutorial-----------------------------  
 	UI_Login L = PageFactory.initElements(Config.driver, UI_Login.class);		    
     Config.globalCP = "Tutorial - " + Frmwrk.obtenerFecha();
