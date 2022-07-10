@@ -43,14 +43,14 @@ public class Config {
 		 //capabilities.setCapability("deviceName", "iPhone 5s");
 		
 		capabilities.setCapability("platformName", "iOS");
-		capabilities.setCapability("platformVersion", "15.5"); 
+		capabilities.setCapability("platformVersion", "14.5"); 
 
 		capabilities.setCapability("automationName", "XCUITest");
 		
-			capabilities.setCapability("locationServicesEnabled", "true");
+		capabilities.setCapability("locationServicesEnabled", "true");
 		capabilities.setCapability("locationServicesAuthorized", "true");
-		//capabilities.setCapability("autoAcceptAlerts", "true"); // no se puede habilitar porque afecta los mensajes de confirmacion de la app
-		  capabilities.setCapability("autoGrantPermissions", "true");
+		capabilities.setCapability("autoAcceptAlerts", "true"); // no se puede habilitar porque afecta los mensajes de confirmacion de la app
+		capabilities.setCapability("autoGrantPermissions", "true");
 		
 		
 	//	capabilities.setCapability("permissions", "{\"uy.com.scotiabank.scotiabankUPP\": {\"location\": \"inuse\"}}");
