@@ -11,10 +11,8 @@
 	<classpathentry kind="lib" path="iOSBot/libs/client-combined-3.13.0.jar"/>
 	<classpathentry kind="lib" path="iOSBot/libs/commons-codec-1.10.jar"/>
 	<classpathentry kind="lib" path="iOSBot/libs/commons-exec-1.3.jar"/>
-	<classpathentry kind="lib" path="iOSBot/libs/commons-io-2.6.jar"/>
 	<classpathentry kind="lib" path="iOSBot/libs/commons-io-2.6-javadoc.jar"/>
 	<classpathentry kind="lib" path="iOSBot/libs/commons-io-2.6-tests.jar"/>
-	<classpathentry kind="lib" path="iOSBot/libs/commons-lang3-3.1.jar"/>
 	<classpathentry kind="lib" path="iOSBot/libs/commons-logging-1.2.jar"/>
 	<classpathentry kind="lib" path="iOSBot/libs/fontbox-1.5.0.jar"/>
 	<classpathentry kind="lib" path="iOSBot/libs/gson-2.8.4.jar"/>
@@ -32,7 +30,6 @@
 	<classpathentry kind="lib" path="iOSBot/libs/itext-xtra-5.5.5.jar"/>
 	<classpathentry kind="lib" path="iOSBot/libs/itext-xtra-5.5.5-javadoc.jar"/>
 	<classpathentry kind="lib" path="iOSBot/libs/itext-xtra-5.5.5-sources.jar"/>
-	<classpathentry kind="lib" path="iOSBot/libs/java-client-6.1.0.jar"/>
 	<classpathentry kind="lib" path="iOSBot/libs/jcommon-1.0.23.jar"/>
 	<classpathentry kind="lib" path="iOSBot/libs/jfreechart-1.0.19.jar"/>
 	<classpathentry kind="lib" path="iOSBot/libs/jfreechart-1.0.19-experimental.jar"/>
@@ -55,5 +52,18 @@
 	<classpathentry kind="lib" path="iOSBot/libs/swtgraphics2d.jar"/>
 	<classpathentry kind="lib" path="iOSBot/libs/ucp.jar"/>
 	<classpathentry kind="lib" path="iOSBot/libs/xdb6.jar"/>
+	<classpathentry kind="lib" path="iOSBot/libs/commons-io-2.11.0.jar"/>
+	<classpathentry kind="lib" path="iOSBot/libs/commons-lang3-3.12.0.jar"/>
+	<classpathentry kind="lib" path="iOSBot/libs/java-client-7.6.0.jar"/>
+	<classpathentry kind="lib" path="iOSBot/libs/asm-7.1.jar"/>
+	<classpathentry kind="lib" path="iOSBot/libs/cglib-3.3.0.jar"/>
+	<classpathentry kind="lib" path="iOSBot/libs/selenium-api-3.141.59.jar"/>
+	<classpathentry kind="lib" path="iOSBot/libs/selenium-java-3.141.59.jar"/>
+	<classpathentry kind="lib" path="iOSBot/libs/selenium-remote-driver-3.141.59.jar"/>
+	<classpathentry kind="lib" path="iOSBot/libs/selenium-support-3.141.59.jar"/>
+	<classpathentry kind="lib" path="iOSBot/libs/commons-beanutils-1.9.4.jar"/>
+	<classpathentry kind="lib" path="iOSBot/libs/commons-collections-3.2.2.jar"/>
+	<classpathentry kind="lib" path="iOSBot/libs/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="iOSBot/libs/commons-validator-1.7.jar"/>
 	<classpathentry kind="output" path="iOSBot/bin"/>
 </classpath>
